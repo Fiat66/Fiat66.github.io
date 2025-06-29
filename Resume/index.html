@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column; /* เริ่มเป็น column */
+      align-items: center;
+      padding: min(1em, 2vw);
+      background-color: rgb(22, 43, 117);
+      gap: 1rem;
+    }
+
+    .image-container {
+      width: 60%;
+      max-width: 200px;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      aspect-ratio: 1/1;
+      border-radius: 8px;
+    }
+
+    .text-container {
+      max-width: 600px;
+      color: white;
+    }
+
+    /* Responsive: เปลี่ยนเป็น row บนจอใหญ่ */
+    @media (min-width: 768px) {
+      .container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .image-container {
+        max-width: 300px;
+      }
+
+      .text-container {
+        text-align: left;
+      }
+    }
+    .animated-bg {
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  border-radius: 12px;
+}
+  </style>
+</head>
+<body>
+<div class="animated-bg">Welcome to My Portfolio</div>
+
+  <h1>Acting Capt.Anuphap Witsukumarn</h1>
+  <div class="container">
+    <div class="image-container">
+      <img src="image/Fiat.jpg" alt="Acting Capt.Anuphap Witsukumarn">
+    </div>
+    <div class="text-container">
+      <p>
+        Industrial Engineering
+      </p>
+      <p>
+        Faculty of Engineering
+      </p>
+      <p>
+        Rajamangala University of Technology Thanyaburi
+      </p>
+    </div>
+  </div>
+    <ul class="contact">
+      <li><strong>Email:</strong> anuphap.w@en.rmutt.ac.th</li>
+      <li><strong>Phone:</strong> +66 (0)81-234-5678</li>
+      <li><strong>GitHub:</strong> github.com/fiat66</li>
+    </ul>
+</body>
+</html>
